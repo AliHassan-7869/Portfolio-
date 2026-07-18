@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Case Study</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="detail-page">
+  <div id="cursor-follower"></div>
+  <div id="page-loader">
+    <div class="loader-content">
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+  <div id="bg-glow"></div>
+  <div id="app">
+    <!-- Mini Navbar -->
+    <nav class="navbar scrolled">
+      <div class="container">
+        <a href="index.html" class="logo">ALI HASSAN<span>.</span></a>
+        <div class="nav-right">
+          <button class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <a href="index.html" class="btn-back hide-mobile">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Back to Work
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Case Study Hero -->
+    <header class="case-study-hero">
+      <div class="container">
+        <div class="hero-text-content reveal">
+          <span id="tagline" class="tagline gradient-text">Case Study</span>
+          <h1 id="item-title" class="reveal-text">Project Title</h1>
+          <p id="item-description" class="case-desc">Comprehensive project overview goes here. This will be an immersive introduction to the problem solved.</p>
+          
+          <div class="tech-stack-pills" id="tech-stack">
+            <!-- Dynamic pills -->
+          </div>
+        </div>
+      </div>
+      <div class="hero-bg-overlay"></div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container case-study-content">
+      <!-- Media Section -->
+      <section class="media-showcase reveal">
+        <div id="item-image-wrapper" class="glass main-showcase-img">
+          <img id="item-image" src="" alt="">
+        </div>
+      </section>
+
+      <!-- Features & Details Grid -->
+      <section class="details-grid-section">
+        <div class="grid-2">
+          <div class="features-list reveal">
+            <h2 class="section-title">Key <span class="gradient-text">Features</span></h2>
+            <ul id="features-container" class="custom-list">
+              <!-- Dynamic features -->
+            </ul>
+          </div>
+          <div class="results-card glass reveal">
+            <h3 class="gradient-text">The Challenge</h3>
+            <p id="item-challenge" style="margin-bottom: 2rem;">Identifying the core problem space.</p>
+            
+            <h3 class="gradient-text">The Solution</h3>
+            <p id="item-solution" style="margin-bottom: 2rem;">How the problem was solved with technology.</p>
+
+            <h3 class="gradient-text">The Result</h3>
+            <p id="item-results">Project outcome and impact summary.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Workflow Roadmap -->
+      <section class="roadmap-section reveal">
+        <h2 class="section-title centered">Project <span class="gradient-text">Roadmap</span></h2>
+        <div id="workflow-steps" class="roadmap-container">
+          <!-- Dynamic steps wrapped in a timeline -->
+        </div>
+      </section>
+      <!-- Next Project Transition -->
+      <section class="next-project-section reveal">
+        <div class="container">
+          <span class="tagline">Up Next</span>
+          <a href="#" id="next-project-link" class="next-project-card glass">
+            <div class="next-info">
+              <h2 id="next-project-title">Next Project Title</h2>
+              <p>Explore another case study</p>
+            </div>
+            <div class="next-arrow">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Project Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>Interested in something similar?</p>
+        <a href="index.html#contact" class="btn-primary">Let's Build It</a>
+        <p class="copyright">&copy; 2026 Ali Hassan. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="./detail.js"></script>
+</body>
+</html>
