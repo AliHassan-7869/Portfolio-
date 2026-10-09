@@ -22,6 +22,20 @@ requestAnimationFrame(raf);
 // Link Lenis to ScrollTrigger
 lenis.on('scroll', ScrollTrigger.update);
 
+// Smooth Anchor Scroll for Hire Me, View My Work, Nav Links
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener('click', (e) => {
+    const targetId = anchor.getAttribute('href');
+    if (targetId && targetId !== '#') {
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        e.preventDefault();
+        lenis.scrollTo(targetElement);
+      }
+    }
+  });
+});
+
 gsap.ticker.add((time) => {
   lenis.raf(time * 1000);
 });
