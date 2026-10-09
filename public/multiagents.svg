@@ -1,0 +1,35 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="40" fill="url(#bg)"/>
+  <circle cx="950" cy="190" r="220" fill="rgba(255,255,255,0.07)"/>
+  <circle cx="250" cy="620" r="260" fill="rgba(34,211,238,0.08)"/>
+  <rect x="180" y="190" width="840" height="420" rx="30" fill="rgba(15,23,42,0.72)" stroke="rgba(148,163,184,0.35)"/>
+  <g opacity="0.95">
+    <rect x="250" y="300" width="180" height="180" rx="26" fill="url(#a)"/>
+    <rect x="510" y="250" width="180" height="180" rx="26" fill="url(#b)"/>
+    <rect x="770" y="300" width="180" height="180" rx="26" fill="url(#c)"/>
+    <path d="M430 390H510" stroke="#E2E8F0" stroke-width="10" stroke-linecap="round"/>
+    <path d="M690 340H770" stroke="#E2E8F0" stroke-width="10" stroke-linecap="round"/>
+    <path d="M600 430V520H510" stroke="#E2E8F0" stroke-width="10" stroke-linecap="round"/>
+    <path d="M600 430V520H690" stroke="#E2E8F0" stroke-width="10" stroke-linecap="round"/>
+    <rect x="510" y="520" width="180" height="52" rx="16" fill="#0F172A" stroke="rgba(148,163,184,0.35)"/>
+  </g>
+  <text x="240" y="120" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="62" font-weight="700">Multi-Agent System</text>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1120"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="a" x1="250" y1="300" x2="430" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="b" x1="510" y1="250" x2="690" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#0EA5E9"/>
+    </linearGradient>
+    <linearGradient id="c" x1="770" y1="300" x2="950" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34D399"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+</svg>

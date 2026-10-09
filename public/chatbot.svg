@@ -1,0 +1,28 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="40" fill="url(#bg)"/>
+  <circle cx="920" cy="180" r="220" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="260" cy="580" r="260" fill="rgba(124,58,237,0.10)"/>
+  <rect x="180" y="180" width="840" height="440" rx="32" fill="rgba(15,23,42,0.70)" stroke="rgba(148,163,184,0.35)"/>
+  <rect x="240" y="250" width="520" height="24" rx="12" fill="#E2E8F0" fill-opacity="0.18"/>
+  <rect x="240" y="310" width="420" height="20" rx="10" fill="#E2E8F0" fill-opacity="0.12"/>
+  <rect x="240" y="350" width="560" height="20" rx="10" fill="#E2E8F0" fill-opacity="0.12"/>
+  <rect x="240" y="430" width="250" height="98" rx="26" fill="url(#bubbleA)"/>
+  <rect x="520" y="470" width="300" height="98" rx="26" fill="url(#bubbleB)"/>
+  <path d="M360 520C355 550 332 568 300 568H245C229 568 216 581 216 597V597C216 613 229 626 245 626H301C364 626 421 584 430 520H360Z" fill="#8B5CF6" fill-opacity="0.35"/>
+  <path d="M770 575C773 545 793 527 825 527H880C896 527 909 514 909 498V498C909 482 896 469 880 469H824C761 469 704 511 695 575H770Z" fill="#22D3EE" fill-opacity="0.35"/>
+  <text x="240" y="110" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="70" font-weight="700">AI Chatbot</text>
+  <defs>
+    <linearGradient id="bg" x1="99" y1="30" x2="1070" y2="770" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="bubbleA" x1="240" y1="430" x2="490" y2="528" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#0EA5E9"/>
+    </linearGradient>
+    <linearGradient id="bubbleB" x1="520" y1="470" x2="820" y2="568" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+</svg>

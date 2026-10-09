@@ -1,0 +1,72 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="100" y1="80" x2="1100" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1020"/>
+      <stop offset="0.5" stop-color="#111827"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="200" y1="180" x2="980" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#0F172A" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#6EE7F9"/>
+      <stop offset="1" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#C084FC"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#6EE7B7"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" rx="36" fill="url(#bg)"/>
+  <circle cx="220" cy="180" r="220" fill="#38BDF8" fill-opacity="0.08"/>
+  <circle cx="980" cy="640" r="250" fill="#A78BFA" fill-opacity="0.08"/>
+
+  <rect x="150" y="150" width="900" height="500" rx="32" fill="url(#panel)" stroke="rgba(255,255,255,0.15)"/>
+
+  <g transform="translate(210 220)">
+    <rect x="0" y="0" width="180" height="190" rx="22" fill="#0B1320" stroke="rgba(148,163,184,0.25)"/>
+    <rect x="25" y="35" width="92" height="14" rx="7" fill="#E2E8F0" fill-opacity="0.28"/>
+    <rect x="25" y="70" width="120" height="14" rx="7" fill="#E2E8F0" fill-opacity="0.12"/>
+    <rect x="25" y="105" width="78" height="54" rx="14" fill="url(#teal)" opacity="0.9"/>
+    <path d="M110 115H130" stroke="#F8FAFC" stroke-width="8" stroke-linecap="round"/>
+    <path d="M110 136H144" stroke="#F8FAFC" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(430 220)">
+    <rect x="0" y="0" width="250" height="300" rx="24" fill="#0B1320" stroke="rgba(148,163,184,0.25)"/>
+    <circle cx="70" cy="80" r="36" fill="url(#purple)"/>
+    <rect x="122" y="60" width="92" height="16" rx="8" fill="#E2E8F0" fill-opacity="0.22"/>
+    <rect x="122" y="95" width="82" height="14" rx="7" fill="#E2E8F0" fill-opacity="0.12"/>
+    <rect x="36" y="150" width="178" height="20" rx="10" fill="#E2E8F0" fill-opacity="0.12"/>
+    <rect x="36" y="185" width="150" height="20" rx="10" fill="#E2E8F0" fill-opacity="0.09"/>
+    <rect x="36" y="220" width="110" height="20" rx="10" fill="#E2E8F0" fill-opacity="0.08"/>
+  </g>
+
+  <g transform="translate(720 220)">
+    <rect x="0" y="0" width="180" height="190" rx="22" fill="#0B1320" stroke="rgba(148,163,184,0.25)"/>
+    <rect x="30" y="38" width="122" height="16" rx="8" fill="#E2E8F0" fill-opacity="0.22"/>
+    <rect x="30" y="72" width="94" height="14" rx="7" fill="#E2E8F0" fill-opacity="0.12"/>
+    <rect x="30" y="108" width="120" height="52" rx="16" fill="url(#green)" opacity="0.9"/>
+    <path d="M52 134H113" stroke="#F8FAFC" stroke-width="8" stroke-linecap="round"/>
+    <path d="M52 147H95" stroke="#F8FAFC" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(220 520)">
+    <rect x="0" y="0" width="760" height="58" rx="18" fill="#0B1320" stroke="rgba(148,163,184,0.18)"/>
+    <circle cx="42" cy="29" r="10" fill="#6EE7F9"/>
+    <circle cx="78" cy="29" r="10" fill="#A78BFA"/>
+    <circle cx="114" cy="29" r="10" fill="#6EE7B7"/>
+    <rect x="160" y="19" width="150" height="16" rx="8" fill="#E2E8F0" fill-opacity="0.18"/>
+    <rect x="340" y="19" width="180" height="16" rx="8" fill="#E2E8F0" fill-opacity="0.12"/>
+    <rect x="555" y="19" width="150" height="16" rx="8" fill="#E2E8F0" fill-opacity="0.12"/>
+  </g>
+
+  <text x="190" y="640" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="64" font-weight="700">Mini AI Hub</text>
+  <text x="190" y="688" fill="#9FE7FF" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="500">AI Tools • Dashboard • Fast Access</text>
+</svg>
