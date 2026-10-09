@@ -1,4 +1,73 @@
 export const projectDetails = {
+  'adalat': {
+    title: 'Adalat — AI Courtroom Simulator',
+    tagline: 'Multi-Agent Pakistani Legal Reasoning System',
+    icon: '⚖️',
+    image: '/ai-courtroom-cover.svg',
+    description: 'A multi-agent legal reasoning simulator where prosecutor, defence, and judge agents argue cases under Pakistani law (PPC, CrPC, QSO, PECA), delivering structured verdicts against a weighted rubric.',
+    techStack: ['Python', 'Gemini', 'Streamlit', 'Pydantic', 'SQLite', 'HyDE', 'RAG'],
+    features: [
+      'Multi-Agent Arguments: Simulated prosecutor, defence, and judge agents debating legal precedents.',
+      'Pakistani Law Grounding: Built on PPC, CrPC, QSO, and PECA legal codes.',
+      'Hybrid Retrieval: Fused BM25, citation matching, and HyDE with reciprocal rank fusion for 100% recall@5 on a 40-case benchmark.',
+      'Anti-Hallucination Defense: 3-layer defense (retrieval-first prompting, ID stripping, LLM verifier) against hallucinated law.'
+    ],
+    workflow: [
+      { step: '01', title: 'Legal Architecture', desc: 'Designed specialized agent roles for prosecution, defense, and judge using Pakistani legal codes.' },
+      { step: '02', title: 'Hybrid Retrieval Engine', desc: 'Combined BM25 keyword search, citation matching, and HyDE with reciprocal rank fusion.' },
+      { step: '03', title: 'Anti-Hallucination Pipeline', desc: 'Built a 3-layer verification system to prevent legal hallucinations and ensure citation accuracy.' },
+      { step: '04', title: 'Verdict Engine', desc: 'Integrated structured LLM scoring rubrics in Streamlit for clear, explainable court decisions.' }
+    ],
+    challenge: 'Legal AI applications frequently hallucinate case law or produce vague arguments without proper statutory grounding.',
+    solution: 'Engineered a 3-layer anti-hallucination defense paired with hybrid BM25+HyDE retrieval to ground multi-agent debates in authentic Pakistani law.',
+    results: 'Achieved 100% recall@5 across a 40-case benchmark and produced explainable, rubric-backed legal verdicts.'
+  },
+  'awaaz': {
+    title: 'Awaaz — Real-time Voice AI Assistant',
+    tagline: 'Bilingual Urdu/English Voice AI System',
+    icon: '🎙️',
+    image: '/chatbot.svg',
+    description: 'A real-time bilingual (Urdu/English) voice assistant with a FastAPI backend, PostgreSQL + pgvector long-term memory, Redis caching, and a React web client containerized with Docker.',
+    techStack: ['LiveKit Agents', 'ElevenLabs', 'FastAPI', 'pgvector', 'Redis', 'React', 'Docker'],
+    features: [
+      'Real-Time Speech Processing: Powered by LiveKit Agents and ElevenLabs for low-latency bilingual speech.',
+      'Vector Memory: Vector memory with PostgreSQL + pgvector for seamless multi-session recall.',
+      'Bilingual Capabilities: Instant language switching between Urdu and English with high accuracy.',
+      'Production Stack: Containerized with Docker, backed by Redis caching and a responsive React UI.'
+    ],
+    workflow: [
+      { step: '01', title: 'Voice Pipeline Setup', desc: 'Orchestrated LiveKit Agents and ElevenLabs for ultra-low latency voice interaction.' },
+      { step: '02', title: 'Memory Integration', desc: 'Implemented pgvector with PostgreSQL and Redis to give the assistant persistent conversational memory.' },
+      { step: '03', title: 'Bilingual Prompting', desc: 'Designed context-switching prompts to maintain natural Urdu and English dialogue.' },
+      { step: '04', title: 'Containerization', desc: 'Packaged the FastAPI backend and React frontend with Docker for cloud deployment.' }
+    ],
+    challenge: 'Real-time voice assistants suffer from latency and loss of context in non-English or bilingual environments.',
+    solution: 'Integrated LiveKit streaming pipelines with pgvector vector memory and Redis to deliver fast, context-aware bilingual conversations.',
+    results: 'Shipped a containerized, low-latency bilingual voice assistant capable of real-time Urdu and English interaction.'
+  },
+  'qa-supervisor': {
+    title: 'QA Supervisor & Instrumentation Agent',
+    tagline: 'Friday Media Group — Edge & Token Automation',
+    icon: '⚡',
+    image: '/cvresume.jpg',
+    description: 'Built a zero-impact instrumentation shim across 142 edge functions that simulates side effects, token tracking systems, and 700+ automated Vitest/Playwright tests across 35 categories.',
+    techStack: ['Python', 'Supabase', 'Vitest', 'Playwright', 'FastAPI', 'Redis', 'LLM Evaluation'],
+    features: [
+      'Edge Function Instrumentation: Zero-impact shim across 142 edge functions for safe dry-run testing.',
+      'Token & Cost Monitoring: Per-test input/output token tracking, model call metrics, and separate judge cost analysis.',
+      'Comprehensive Test Suite: 700+ automated Vitest & Playwright tests covering security, prompt injection, and reliability.',
+      'Real-Time Dashboard: Built with Supabase Realtime for execution traces, token usage, and regression tracking.'
+    ],
+    workflow: [
+      { step: '01', title: 'Instrumentation Shim', desc: 'Created dry-run simulation layer for DB writes, emails, refunds, and external API calls.' },
+      { step: '02', title: 'Token & Cost Engine', desc: 'Built fine-grained metrics tracking for LLM calls and evaluation costs.' },
+      { step: '03', title: 'QA Automation', desc: 'Authored 700+ automated test cases covering prompt injection, concurrency, and security.' },
+      { step: '04', title: 'Realtime Dashboard', desc: 'Connected Supabase Realtime for instant trace visualization and regression alerts.' }
+    ],
+    challenge: 'Testing AI agents in production risks unintended side effects (refunds, emails, DB writes) and unmonitored LLM token costs.',
+    solution: 'Developed an edge function instrumentation shim alongside automated token tracking and a QA supervisor agent.',
+    results: 'Enabled safe dry-run testing across 142 edge functions, tracked token spend, and reduced regression errors.'
+  },
   'goguide': {
     title: 'GoGuide',
     tagline: 'AI-Based Travel Planning System',
@@ -152,23 +221,23 @@ export const projectDetails = {
     results: 'Built a multi-agent research prototype for analyzing business trends and long-term investment opportunities.'
   },
   'ai-courtroom': {
-    title: 'AI Courtroom',
-    tagline: 'AI-Powered Legal Case Assistant',
+    title: 'Adalat — AI Courtroom Simulator',
+    tagline: 'Multi-Agent Legal Reasoning System',
     icon: '⚖️',
     image: '/ai-courtroom-cover.svg',
-    description: 'A courtroom-focused AI assistant built to help users understand legal questions, case structure, and legal reasoning in a more accessible way.',
-    techStack: ['Python', 'LLM APIs', 'Prompt Engineering', 'Legal AI'],
+    description: 'A courtroom-focused legal reasoning simulator where prosecutor, defence, and judge agents argue cases under Pakistani law.',
+    techStack: ['Python', 'Gemini', 'Streamlit', 'Pydantic', 'SQLite'],
     features: [
-      'Case-Oriented Q&A: Helps users explore legal scenarios and relevant context.',
-      'Decision Support: Provides structured, AI-assisted answers for legal exploration.',
-      'Accessible Interface: Simplifies complex legal research into a conversational workflow.'
+      'Case-Oriented Q&A: Helps users explore legal scenarios under PPC, CrPC, QSO, and PECA.',
+      'Hybrid Retrieval: Fused BM25 and HyDE for 100% recall@5 on 40-case benchmark.',
+      'Anti-Hallucination: 3-layer verification against hallucinated case law.'
     ],
     workflow: [
       { step: '01', title: 'Problem Framing', desc: 'Mapped the project around legal question handling and case-oriented responses.' },
       { step: '02', title: 'LLM Logic', desc: 'Structured prompts to guide legal reasoning and produce clear, explainable answers.' },
       { step: '03', title: 'User Experience', desc: 'Built a simple interaction flow for easier legal exploration and learning.' }
     ],
-    challenge: 'Legal discussions can be complicated and hard to navigate without context, structure, or simpler explanations.',
+    challenge: 'Legal discussions can be complicated and hard to navigate without context, structure, or statutory grounding.',
     solution: 'An AI assistant designed to guide users through legal questions in a structured, understandable conversational format.',
     results: 'Developed a functional AI legal-assistant prototype that demonstrates practical AI support for courtroom-style inquiries.'
   },
@@ -199,7 +268,7 @@ export const projectDetails = {
     tagline: 'Autonomous, Orchestrated AI',
     icon: '🤖',
     description: 'Designing and building multi-agent AI systems where specialized agents collaborate to solve complex, multi-step problems.',
-    techStack: ['CrewAI', 'LangChain', 'Multi-Agent Design', 'LLM Orchestration'],
+    techStack: ['CrewAI', 'LangChain', 'LangGraph', 'LLM Orchestration'],
     features: [
       'Agent role design for focused, specialized reasoning',
       'Multi-agent coordination for complex, multi-step tasks',
@@ -217,12 +286,12 @@ export const projectDetails = {
     tagline: 'Applied Large Language Models',
     icon: '🧠',
     description: 'Building practical applications on top of large language models — from prompt design to full-stack AI product integration.',
-    techStack: ['LangChain', 'DeepSeek', 'OpenRouter', 'TensorFlow', 'PyTorch'],
+    techStack: ['LangChain', 'LangGraph', 'Gemini', 'Claude', 'GPT', 'Pinecone', 'pgvector'],
     features: [
       'Prompt engineering for reliable, task-specific outputs',
-      'LLM API integration (DeepSeek, OpenRouter, and others)',
-      'Working knowledge of TensorFlow and PyTorch',
-      'Retrieval-augmented generation (RAG) for grounded answers'
+      'LLM API integration (Gemini, Claude, GPT, DeepSeek)',
+      'LLM evaluation, token & cost monitoring',
+      'Retrieval-augmented generation (RAG) with Pinecone & pgvector'
     ],
     workflow: [
       { step: '01', title: 'Model Selection', desc: 'Choosing the right LLM and API for a given task and cost/performance tradeoff.' },
@@ -235,35 +304,35 @@ export const projectDetails = {
     tagline: 'Shipping AI to Production',
     icon: '⚙️',
     description: 'Building and deploying backend services that bring AI systems from notebook to production.',
-    techStack: ['FastAPI', 'Docker', 'Render', 'Python'],
+    techStack: ['FastAPI', 'PostgreSQL', 'Supabase', 'Redis', 'Docker'],
     features: [
       'RESTful API development with FastAPI',
-      'Containerized deployments with Docker',
-      'Cloud deployment and hosting via Render',
-      'Debugging real-world dependency and deployment issues'
+      'Database & Vector Search with Supabase, PostgreSQL & pgvector',
+      'Containerized deployments with Docker & Render',
+      'Automated testing with Vitest & Playwright'
     ],
     workflow: [
       { step: '01', title: 'API Design', desc: 'Structuring clean, well-documented FastAPI endpoints for AI-powered services.' },
       { step: '02', title: 'Containerization', desc: 'Packaging services with Docker for consistent, portable deployment.' },
-      { step: '03', title: 'Cloud Deployment', desc: 'Shipping and maintaining services on Render, resolving issues as they come up in production.' }
+      { step: '03', title: 'Cloud Deployment', desc: 'Shipping and maintaining services on Render/Supabase, resolving issues as they come up.' }
     ]
   },
   'automation': {
-    title: 'Automation & Workflows',
-    tagline: 'Connecting Tools Intelligently',
-    icon: '🔗',
-    description: 'Automating workflows and connecting tools using platforms like N8N alongside custom AI logic.',
-    techStack: ['N8N', 'Python', 'APIs', 'Automation'],
+    title: 'Automation & QA Testing',
+    tagline: 'Agent Reliability & Token Tracking',
+    icon: '⚡',
+    description: 'Building QA supervisor agents, edge function dry-run instrumentation shims, and token tracking systems.',
+    techStack: ['Vitest', 'Playwright', 'Supabase Realtime', 'Python', 'N8N'],
     features: [
-      'Workflow automation with N8N',
-      'Custom API integrations for connected tooling',
-      'Python scripting for automation logic',
-      'Practical, business-focused automation design'
+      'Zero-impact edge function dry-run shims',
+      'LLM token, cost & regression tracking',
+      '700+ automated tests across 35 categories',
+      'Realtime QA execution trace dashboards'
     ],
     workflow: [
-      { step: '01', title: 'Workflow Mapping', desc: 'Identifying repetitive or multi-step processes worth automating.' },
-      { step: '02', title: 'Automation Build', desc: 'Building the workflow in N8N with API and Python logic where needed.' },
-      { step: '03', title: 'Testing & Refinement', desc: 'Validating the automation end-to-end and refining for reliability.' }
+      { step: '01', title: 'Workflow Mapping', desc: 'Identifying edge side-effects and critical test categories worth automating.' },
+      { step: '02', title: 'Instrumentation Build', desc: 'Building dry-run simulation layers for safe automated agent execution.' },
+      { step: '03', title: 'Testing & Refinement', desc: 'Validating end-to-end execution traces and monitoring token budgets.' }
     ]
   }
 };
