@@ -116,24 +116,61 @@
       <div class="container">
         <h2 class="section-title centered">CV / <span class="gradient-text">Resume</span></h2>
         <div class="resume-grid">
-          <div class="resume-card glass">
+          <div class="resume-card glass full-width">
             <h3>Professional Summary</h3>
-            <p>AI Engineer with hands-on experience building production AI agents, multi-agent systems, and LLM-powered applications using LangChain, LangGraph, and CrewAI. Built QA automation and token monitoring systems to improve agent reliability and control LLM costs. Develops scalable backends with FastAPI and Supabase.</p>
+            <p>AI Engineer with hands-on experience building production AI agents, multi-agent systems, and LLM-powered applications using LangChain, LangGraph, and CrewAI. Built QA automation and token monitoring systems to improve agent reliability and control LLM costs. Develops scalable backends with FastAPI and Supabase, with working knowledge of SQL and Python data processing.</p>
           </div>
 
-          <div class="resume-card glass">
+          <!-- Detailed Experience Section -->
+          <div class="resume-card glass full-width">
             <h3>Professional Experience</h3>
-            <ul>
-              <li><strong>Junior AI Engineer — Friday Media Group</strong> (Jan 2026 – Present)<br><small>Built zero-impact edge function instrumentation across 142 edge functions, token cost tracking, and 700+ automated Vitest/Playwright tests.</small></li>
-              <li><strong>AI Engineering Intern — Friday Media Group</strong> (Oct 2025 – Dec 2025)<br><small>Built CrewAI multi-agent systems, Pinecone/ChromaDB RAG pipelines, and FastAPI/Supabase backend services.</small></li>
-            </ul>
+            <div class="exp-timeline">
+              <!-- Role 1 -->
+              <div class="exp-item">
+                <div class="exp-header">
+                  <div>
+                    <span class="exp-role">Junior AI Engineer</span>
+                    <span class="exp-company">@ Friday Media Group</span>
+                  </div>
+                  <span class="exp-date">January 2026 – Present</span>
+                </div>
+                <ul class="exp-bullets">
+                  <li>Built a zero-impact instrumentation shim across 142 edge functions that simulates and records side effects (DB writes, emails, refunds, API calls), enabling safe dry-run testing without affecting production data.</li>
+                  <li>Implemented per-test LLM token and cost tracking (input/output tokens, model calls, separate judge costs), giving clear visibility into the cost of testing each agent.</li>
+                  <li>Developed 700+ automated Vitest/Playwright tests across 35 test categories, covering functionality, security, prompt injection, concurrency, reliability, and edge cases.</li>
+                  <li>Built a real-time QA dashboard with Supabase Realtime for execution traces, token usage, and regression tracking.</li>
+                  <li>Built a QA Supervisor Agent that automatically discovers, tests, and monitors production AI agents across Finance, Marketing, and Customer Support.</li>
+                </ul>
+              </div>
+
+              <!-- Role 2 -->
+              <div class="exp-item">
+                <div class="exp-header">
+                  <div>
+                    <span class="exp-role">AI Engineering Intern</span>
+                    <span class="exp-company">@ Friday Media Group</span>
+                  </div>
+                  <span class="exp-date">October 2025 – December 2025</span>
+                </div>
+                <ul class="exp-bullets">
+                  <li>Built multi-agent systems with CrewAI and LangChain, orchestrating specialized agents for complex tasks.</li>
+                  <li>Developed RAG pipelines using Pinecone and ChromaDB to deliver context-aware AI responses.</li>
+                  <li>Built scalable FastAPI services backed by Supabase/PostgreSQL and Redis, with caching, session management, and query optimization.</li>
+                  <li>Created Python data pipelines (Pandas, NumPy) for data processing and transformation, following SOLID principles and clean architecture.</li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           <div class="resume-card glass">
-            <h3>Education</h3>
+            <h3>Education & Languages</h3>
             <p><strong>Bachelor of Science in Computer Science (BSCS)</strong> (2022 – 2026)</p>
             <p>Lahore Leads University, Lahore</p>
-            <p style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9rem;">Languages: English (Professional) • Urdu (Native) • Punjabi (Native)</p>
+            <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.08); margin: 1rem 0;">
+            <p><strong>Languages:</strong></p>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">• English (Professional Working)</p>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">• Urdu (Native)</p>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">• Punjabi (Native)</p>
           </div>
 
           <div class="resume-card glass">
@@ -145,8 +182,8 @@
             </ul>
           </div>
 
-          <div class="resume-card glass">
-            <h3>Skills & Tools</h3>
+          <div class="resume-card glass full-width">
+            <h3>Technical Skills & Tools</h3>
             <div class="resume-tags">
               <span>Python</span>
               <span>LangChain</span>
@@ -154,26 +191,22 @@
               <span>CrewAI</span>
               <span>Gemini</span>
               <span>Claude</span>
+              <span>GPT</span>
               <span>Pinecone</span>
               <span>ChromaDB</span>
               <span>pgvector</span>
               <span>PyTorch</span>
+              <span>scikit-learn</span>
               <span>FastAPI</span>
+              <span>PostgreSQL</span>
               <span>Supabase</span>
               <span>Redis</span>
               <span>Docker</span>
               <span>Vitest</span>
               <span>Playwright</span>
+              <span>Pandas</span>
+              <span>SQL</span>
             </div>
-          </div>
-
-          <div class="resume-card glass resume-projects-card">
-            <h3>Key Projects</h3>
-            <ul>
-              <li><strong>Adalat</strong> — Multi-agent Pakistani AI courtroom simulator with hybrid BM25+HyDE retrieval & 3-layer anti-hallucination defense.</li>
-              <li><strong>Awaaz</strong> — Real-time bilingual (Urdu/English) voice assistant with LiveKit, ElevenLabs, FastAPI & pgvector.</li>
-              <li><strong>GoGuide</strong> — AI travel planner built with FastAPI, CrewAI multi-agent architecture, and Docker.</li>
-            </ul>
           </div>
         </div>
 
