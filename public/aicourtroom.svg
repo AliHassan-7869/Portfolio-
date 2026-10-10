@@ -1,0 +1,25 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="40" fill="url(#bg)"/>
+  <circle cx="1000" cy="180" r="240" fill="rgba(234, 179, 8, 0.08)"/>
+  <circle cx="200" cy="650" r="280" fill="rgba(168, 85, 247, 0.08)"/>
+  <rect x="160" y="180" width="880" height="460" rx="32" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(148, 163, 184, 0.3)"/>
+  
+  <!-- Scale of Justice / Courtroom Visual -->
+  <g opacity="0.95">
+    <path d="M600 240V500" stroke="#F1F5F9" stroke-width="12" stroke-linecap="round"/>
+    <path d="M400 320H800" stroke="#F1F5F9" stroke-width="12" stroke-linecap="round"/>
+    <path d="M400 320L320 440H480L400 320Z" stroke="#EAB308" stroke-width="8" fill="rgba(234, 179, 8, 0.15)"/>
+    <path d="M800 320L720 440H880L800 320Z" stroke="#A855F7" stroke-width="8" fill="rgba(168, 85, 247, 0.15)"/>
+    <rect x="520" y="500" width="160" height="30" rx="8" fill="#F1F5F9"/>
+  </g>
+
+  <text x="200" y="120" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="700">AI Courtroom Simulator</text>
+  <text x="200" y="700" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="32">Multi-Agent Adversarial Legal System • RAG Verification</text>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E1B4B"/>
+    </linearGradient>
+  </defs>
+</svg>

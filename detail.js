@@ -186,7 +186,8 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   // Next Project Logic
-  const projectIds = Object.keys(projectDetails).filter(k => !['ai-agents', 'genai', 'backend', 'automation'].includes(k));
+  const excludedKeys = ['ai-agents', 'genai', 'backend', 'automation', 'aicourtroom', 'ai-courtroom', 'miniaihub', 'neuralbridge', 'researchdiscussion'];
+  const projectIds = Object.keys(projectDetails).filter(k => !excludedKeys.includes(k));
   const currentIndex = projectIds.indexOf(id);
   const nextIndex = (currentIndex + 1) % projectIds.length;
   const nextId = projectIds[nextIndex];

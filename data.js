@@ -3,7 +3,7 @@ export const projectDetails = {
     title: 'Adalat — AI Courtroom Simulator',
     tagline: 'Multi-Agent Pakistani Legal Reasoning System',
     icon: '⚖️',
-    image: '/ai-courtroom-cover.svg',
+    image: '/aicourtroom.svg',
     description: 'A multi-agent legal reasoning simulator where prosecutor, defence, and judge agents argue cases under Pakistani law (PPC, CrPC, QSO, PECA), delivering structured verdicts against a weighted rubric.',
     techStack: ['Python', 'Gemini', 'Streamlit', 'Pydantic', 'SQLite', 'HyDE', 'RAG'],
     features: [
@@ -224,7 +224,28 @@ export const projectDetails = {
     title: 'Adalat — AI Courtroom Simulator',
     tagline: 'Multi-Agent Legal Reasoning System',
     icon: '⚖️',
-    image: '/ai-courtroom-cover.svg',
+    image: '/aicourtroom.svg',
+    description: 'A courtroom-focused legal reasoning simulator where prosecutor, defence, and judge agents argue cases under Pakistani law.',
+    techStack: ['Python', 'Gemini', 'Streamlit', 'Pydantic', 'SQLite'],
+    features: [
+      'Case-Oriented Q&A: Helps users explore legal scenarios under PPC, CrPC, QSO, and PECA.',
+      'Hybrid Retrieval: Fused BM25 and HyDE for 100% recall@5 on 40-case benchmark.',
+      'Anti-Hallucination: 3-layer verification against hallucinated case law.'
+    ],
+    workflow: [
+      { step: '01', title: 'Problem Framing', desc: 'Mapped the project around legal question handling and case-oriented responses.' },
+      { step: '02', title: 'LLM Logic', desc: 'Structured prompts to guide legal reasoning and produce clear, explainable answers.' },
+      { step: '03', title: 'User Experience', desc: 'Built a simple interaction flow for easier legal exploration and learning.' }
+    ],
+    challenge: 'Legal discussions can be complicated and hard to navigate without context, structure, or statutory grounding.',
+    solution: 'An AI assistant designed to guide users through legal questions in a structured, understandable conversational format.',
+    results: 'Developed a functional AI legal-assistant prototype that demonstrates practical AI support for courtroom-style inquiries.'
+  },
+  'aicourtroom': {
+    title: 'Adalat — AI Courtroom Simulator',
+    tagline: 'Multi-Agent Legal Reasoning System',
+    icon: '⚖️',
+    image: '/aicourtroom.svg',
     description: 'A courtroom-focused legal reasoning simulator where prosecutor, defence, and judge agents argue cases under Pakistani law.',
     techStack: ['Python', 'Gemini', 'Streamlit', 'Pydantic', 'SQLite'],
     features: [
@@ -243,24 +264,150 @@ export const projectDetails = {
   },
   'mini-ai-hub': {
     title: 'Mini AI Hub',
-    tagline: 'AI Tools Dashboard',
-    icon: '🧩',
-    image: '/mini-ai-hub-cover.svg',
-    description: 'A mini AI hub that brings together multiple AI-powered tools in one simple platform experience, focusing on usability and quick experimentation.',
-    techStack: ['JavaScript', 'AI Tools', 'Frontend UI', 'Automation'],
+    tagline: 'Multi-Agent Runtime & Orchestrator',
+    icon: '⚡',
+    image: '/miniaihub.svg',
+    description: 'A unified agent runtime and orchestrator powering Finance and Marketing multi-agent stacks with Supabase integration and Stripe webhooks.',
+    techStack: ['JavaScript', 'Node.js', 'Supabase', 'Stripe', 'Anthropic API'],
     features: [
-      'Unified Interface: Combines multiple AI experiences in one dashboard.',
-      'Quick Access: Makes AI tools easier to explore and use.',
-      'Practical UX: Designed for fast interaction and simple flow.'
+      'Agent Runtime Engine: Orchestrates multi-domain agent execution with state persistence.',
+      'Supabase Integration: Shared database schema storing agent logs, tasks, and outputs.',
+      'Stripe Monetization: Webhook-driven billing events and subscription-gated agent workflows.'
     ],
     workflow: [
-      { step: '01', title: 'Tool Mapping', desc: 'Collected and organized multiple AI use cases into one central experience.' },
-      { step: '02', title: 'Dashboard Design', desc: 'Built a clean interface to present tools in an approachable way.' },
-      { step: '03', title: 'Interaction Flow', desc: 'Focused the experience on quick access and practical user engagement.' }
+      { step: '01', title: 'Architecture', desc: 'Designed unified agent runtime with background scheduled cycles.' },
+      { step: '02', title: 'State & Events', desc: 'Connected Supabase for persistent memory and Stripe webhooks for lifecycle events.' },
+      { step: '03', title: 'Domain Execution', desc: 'Dispatched specialized agents for automated finance and marketing analysis.' }
     ],
-    challenge: 'AI tools are often scattered across separate apps, making it hard to explore them in one place.',
-    solution: 'A compact AI dashboard that centralizes multiple tool experiences and simplifies access.',
-    results: 'Created a lightweight AI hub interface that demonstrates organized AI exploration in one place.'
+    challenge: 'Managing distinct agent lifecycles across diverse business domains without state fragmentation or billing overhead.',
+    solution: 'A unified multi-agent runtime sharing a robust Supabase database and automated Stripe billing triggers.',
+    results: 'Built a scalable multi-domain agent orchestrator ready for production SaaS workloads.'
+  },
+  'miniaihub': {
+    title: 'Mini AI Hub',
+    tagline: 'Multi-Agent Runtime & Orchestrator',
+    icon: '⚡',
+    image: '/miniaihub.svg',
+    description: 'A unified agent runtime and orchestrator powering Finance and Marketing multi-agent stacks with Supabase integration and Stripe webhooks.',
+    techStack: ['JavaScript', 'Node.js', 'Supabase', 'Stripe', 'Anthropic API'],
+    features: [
+      'Agent Runtime Engine: Orchestrates multi-domain agent execution with state persistence.',
+      'Supabase Integration: Shared database schema storing agent logs, tasks, and outputs.',
+      'Stripe Monetization: Webhook-driven billing events and subscription-gated agent workflows.'
+    ],
+    workflow: [
+      { step: '01', title: 'Architecture', desc: 'Designed unified agent runtime with background scheduled cycles.' },
+      { step: '02', title: 'State & Events', desc: 'Connected Supabase for persistent memory and Stripe webhooks for lifecycle events.' },
+      { step: '03', title: 'Domain Execution', desc: 'Dispatched specialized agents for automated finance and marketing analysis.' }
+    ],
+    challenge: 'Managing distinct agent lifecycles across diverse business domains without state fragmentation or billing overhead.',
+    solution: 'A unified multi-agent runtime sharing a robust Supabase database and automated Stripe billing triggers.',
+    results: 'Built a scalable multi-domain agent orchestrator ready for production SaaS workloads.'
+  },
+  'neural-bridge': {
+    title: 'Neural-Bridge: Production AI System',
+    tagline: 'From Research to Production MLOps',
+    icon: '🌉',
+    image: '/neuralbridge.svg',
+    description: 'Demonstrating the full AI lifecycle from research-grade experimentation to production: training CNNs on CIFAR-10 with PyTorch and TensorFlow, sentiment analysis with NLTK, and packaging into a containerized FastAPI endpoint.',
+    techStack: ['PyTorch', 'TensorFlow', 'FastAPI', 'Docker', 'Docker Compose', 'NLTK'],
+    features: [
+      'Dual-Framework CNN: Built and benchmarked identical architectures across PyTorch and TensorFlow/Keras on CIFAR-10.',
+      'Production FastAPI Serving: Wrapped sentiment NLP models in asynchronous, high-throughput REST endpoints.',
+      'Dockerized Deployment: Configured reproducible container builds and docker-compose orchestration.'
+    ],
+    workflow: [
+      { step: '01', title: 'Model Training', desc: 'Trained and evaluated deep CNN models on CIFAR-10, comparing framework metrics.' },
+      { step: '02', title: 'API Wrapping', desc: 'Developed clean FastAPI endpoints for model inference and sentiment classification.' },
+      { step: '03', title: 'Containerization', desc: 'Constructed multi-stage Dockerfiles and docker-compose files for one-command deployment.' }
+    ],
+    challenge: 'Transitioning machine learning models from prototype notebooks into robust, portable, production-ready microservices.',
+    solution: 'Standardized the MLOps pipeline using containerization, REST API standards, and framework-agnostic evaluation.',
+    results: 'Successfully built a complete MLOps workflow enabling zero-downtime serving of vision and NLP models.'
+  },
+  'neuralbridge': {
+    title: 'Neural-Bridge: Production AI System',
+    tagline: 'From Research to Production MLOps',
+    icon: '🌉',
+    image: '/neuralbridge.svg',
+    description: 'Demonstrating the full AI lifecycle from research-grade experimentation to production: training CNNs on CIFAR-10 with PyTorch and TensorFlow, sentiment analysis with NLTK, and packaging into a containerized FastAPI endpoint.',
+    techStack: ['PyTorch', 'TensorFlow', 'FastAPI', 'Docker', 'Docker Compose', 'NLTK'],
+    features: [
+      'Dual-Framework CNN: Built and benchmarked identical architectures across PyTorch and TensorFlow/Keras on CIFAR-10.',
+      'Production FastAPI Serving: Wrapped sentiment NLP models in asynchronous, high-throughput REST endpoints.',
+      'Dockerized Deployment: Configured reproducible container builds and docker-compose orchestration.'
+    ],
+    workflow: [
+      { step: '01', title: 'Model Training', desc: 'Trained and evaluated deep CNN models on CIFAR-10, comparing framework metrics.' },
+      { step: '02', title: 'API Wrapping', desc: 'Developed clean FastAPI endpoints for model inference and sentiment classification.' },
+      { step: '03', title: 'Containerization', desc: 'Constructed multi-stage Dockerfiles and docker-compose files for one-command deployment.' }
+    ],
+    challenge: 'Transitioning machine learning models from prototype notebooks into robust, portable, production-ready microservices.',
+    solution: 'Standardized the MLOps pipeline using containerization, REST API standards, and framework-agnostic evaluation.',
+    results: 'Successfully built a complete MLOps workflow enabling zero-downtime serving of vision and NLP models.'
+  },
+  'sustainability': {
+    title: 'Mission Sustainability',
+    tagline: 'Multi-Agent Environmental Intelligence',
+    icon: '🌱',
+    image: '/sustainability.svg',
+    description: 'A multi-agent response system designed to analyze sustainability metrics, ecological impact, and corporate ESG practices using specialized AI agents.',
+    techStack: ['Python', 'CrewAI', 'LangChain', 'Prompt Engineering'],
+    features: [
+      'Multi-Agent Ecological Analysis: Specialized agents evaluate carbon emissions, resource consumption, and sustainability goals.',
+      'Automated Policy Insights: Generates actionable recommendations tailored to environmental regulations.',
+      'Holistic Synthesis: Cross-references environmental data to produce balanced, evidence-based reports.'
+    ],
+    workflow: [
+      { step: '01', title: 'Data Ingestion', desc: 'Parsed sustainability disclosures, environmental metrics, and targets.' },
+      { step: '02', title: 'Agent Deliberation', desc: 'Orchestrated specialized agents to evaluate specific sustainability verticals.' },
+      { step: '03', title: 'Report Generation', desc: 'Synthesized multi-agent findings into comprehensive ESG recommendation summaries.' }
+    ],
+    challenge: 'Evaluating complex sustainability initiatives requires analyzing conflicting data across emissions, supply chains, and regulatory standards.',
+    solution: 'Leveraged cooperative multi-agent teams where each agent rigorously scrutinizes a distinct environmental pillar.',
+    results: 'Delivered an autonomous sustainability auditing agent capable of deep ecological insights.'
+  },
+  'research-discussion': {
+    title: 'Research Discussion AI',
+    tagline: 'Collaborative Multi-Agent Deliberation',
+    icon: '💡',
+    image: '/researchdiscussion.svg',
+    description: 'A multi-agent deliberative system that facilitates academic and technical research discussions through hypothesis generation, peer critique, and consensus building.',
+    techStack: ['Python', 'LangChain', 'LLM APIs', 'Multi-Agent Deliberation'],
+    features: [
+      'Dialectical Reasoning: Agents challenge assumptions and provide counter-arguments to stress-test ideas.',
+      'Consensus Synthesis: Identifies common ground and summarizes unresolved questions.',
+      'Automated Literature Grounding: Contextualizes discussions against current scientific methodology.'
+    ],
+    workflow: [
+      { step: '01', title: 'Hypothesis Setup', desc: 'Input initial research question or problem statement for exploration.' },
+      { step: '02', title: 'Agent Debate', desc: 'Agents engage in multi-turn structured debate from contrasting perspectives.' },
+      { step: '03', title: 'Consensus Report', desc: 'Produced finalized discussion brief highlighting strongest arguments and key takeaways.' }
+    ],
+    challenge: 'Single-prompt LLMs often produce agreeable but shallow answers lacking deep intellectual critique.',
+    solution: 'Designed an adversarial yet collaborative multi-agent discussion dynamic where agents rigorously cross-examine hypotheses.',
+    results: 'Achieved high-depth research reasoning with autonomous debate and synthesized consensus.'
+  },
+  'researchdiscussion': {
+    title: 'Research Discussion AI',
+    tagline: 'Collaborative Multi-Agent Deliberation',
+    icon: '💡',
+    image: '/researchdiscussion.svg',
+    description: 'A multi-agent deliberative system that facilitates academic and technical research discussions through hypothesis generation, peer critique, and consensus building.',
+    techStack: ['Python', 'LangChain', 'LLM APIs', 'Multi-Agent Deliberation'],
+    features: [
+      'Dialectical Reasoning: Agents challenge assumptions and provide counter-arguments to stress-test ideas.',
+      'Consensus Synthesis: Identifies common ground and summarizes unresolved questions.',
+      'Automated Literature Grounding: Contextualizes discussions against current scientific methodology.'
+    ],
+    workflow: [
+      { step: '01', title: 'Hypothesis Setup', desc: 'Input initial research question or problem statement for exploration.' },
+      { step: '02', title: 'Agent Debate', desc: 'Agents engage in multi-turn structured debate from contrasting perspectives.' },
+      { step: '03', title: 'Consensus Report', desc: 'Produced finalized discussion brief highlighting strongest arguments and key takeaways.' }
+    ],
+    challenge: 'Single-prompt LLMs often produce agreeable but shallow answers lacking deep intellectual critique.',
+    solution: 'Designed an adversarial yet collaborative multi-agent discussion dynamic where agents rigorously cross-examine hypotheses.',
+    results: 'Achieved high-depth research reasoning with autonomous debate and synthesized consensus.'
   },
   // Skills mappings
   'ai-agents': {

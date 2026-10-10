@@ -1,0 +1,35 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="40" fill="url(#bg)"/>
+  <circle cx="950" cy="200" r="220" fill="rgba(239, 68, 68, 0.08)"/>
+  <circle cx="250" cy="620" r="260" fill="rgba(59, 130, 246, 0.08)"/>
+  <rect x="160" y="180" width="880" height="460" rx="32" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(148, 163, 184, 0.3)"/>
+  
+  <!-- Neural Bridge / MLOps Pipeline -->
+  <g opacity="0.95">
+    <!-- PyTorch side -->
+    <rect x="250" y="320" width="180" height="150" rx="20" fill="rgba(239, 68, 68, 0.15)" stroke="#EF4444" stroke-width="4"/>
+    <text x="340" y="405" fill="#FCA5A5" font-family="Segoe UI, sans-serif" font-size="28" font-weight="700" text-anchor="middle">PyTorch</text>
+    
+    <!-- TensorFlow side -->
+    <rect x="770" y="320" width="180" height="150" rx="20" fill="rgba(245, 158, 11, 0.15)" stroke="#F59E0B" stroke-width="4"/>
+    <text x="860" y="405" fill="#FCD34D" font-family="Segoe UI, sans-serif" font-size="26" font-weight="700" text-anchor="middle">TensorFlow</text>
+
+    <!-- Bridge / FastAPI Docker -->
+    <rect x="500" y="300" width="200" height="190" rx="24" fill="rgba(59, 130, 246, 0.2)" stroke="#3B82F6" stroke-width="5"/>
+    <text x="600" y="380" fill="#93C5FD" font-family="Segoe UI, sans-serif" font-size="28" font-weight="700" text-anchor="middle">FastAPI</text>
+    <text x="600" y="430" fill="#60A5FA" font-family="Segoe UI, sans-serif" font-size="22" text-anchor="middle">Docker MLOps</text>
+
+    <path d="M430 395H500" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+    <path d="M700 395H770" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <text x="200" y="120" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="700">Neural-Bridge: Production AI</text>
+  <text x="200" y="700" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="32">CNN Comparative Benchmarks • FastAPI • Containerized MLOps</text>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E1E2E"/>
+    </linearGradient>
+  </defs>
+</svg>

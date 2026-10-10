@@ -1,0 +1,34 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="40" fill="url(#bg)"/>
+  <circle cx="980" cy="200" r="220" fill="rgba(56, 189, 248, 0.08)"/>
+  <circle cx="220" cy="620" r="260" fill="rgba(129, 140, 248, 0.08)"/>
+  <rect x="160" y="180" width="880" height="460" rx="32" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(148, 163, 184, 0.3)"/>
+  
+  <!-- Hub Orchestrator Diagram -->
+  <g opacity="0.95">
+    <circle cx="600" cy="410" r="70" fill="url(#center-glow)" stroke="#38BDF8" stroke-width="6"/>
+    <rect x="260" y="280" width="160" height="100" rx="18" fill="rgba(30, 41, 59, 0.9)" stroke="#818CF8" stroke-width="4"/>
+    <rect x="260" y="440" width="160" height="100" rx="18" fill="rgba(30, 41, 59, 0.9)" stroke="#34D399" stroke-width="4"/>
+    <rect x="780" y="280" width="160" height="100" rx="18" fill="rgba(30, 41, 59, 0.9)" stroke="#F472B6" stroke-width="4"/>
+    <rect x="780" y="440" width="160" height="100" rx="18" fill="rgba(30, 41, 59, 0.9)" stroke="#FBBF24" stroke-width="4"/>
+    
+    <path d="M420 330L530 380" stroke="#94A3B8" stroke-width="6" stroke-dasharray="10 10"/>
+    <path d="M420 490L530 440" stroke="#94A3B8" stroke-width="6" stroke-dasharray="10 10"/>
+    <path d="M780 330L670 380" stroke="#94A3B8" stroke-width="6" stroke-dasharray="10 10"/>
+    <path d="M780 490L670 440" stroke="#94A3B8" stroke-width="6" stroke-dasharray="10 10"/>
+  </g>
+
+  <text x="200" y="120" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="700">Mini AI Hub Orchestrator</text>
+  <text x="200" y="700" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="32">Multi-Agent Runtime • Supabase DB • Stripe Webhooks</text>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#090D16"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="center-glow" x1="530" y1="340" x2="670" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0284C7"/>
+      <stop offset="1" stop-color="#4F46E5"/>
+    </linearGradient>
+  </defs>
+</svg>

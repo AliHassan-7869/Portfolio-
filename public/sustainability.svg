@@ -1,0 +1,29 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="40" fill="url(#bg)"/>
+  <circle cx="950" cy="180" r="220" fill="rgba(16, 185, 129, 0.08)"/>
+  <circle cx="220" cy="620" r="260" fill="rgba(5, 150, 105, 0.08)"/>
+  <rect x="160" y="180" width="880" height="460" rx="32" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(148, 163, 184, 0.3)"/>
+  
+  <!-- Sustainability Leaf & Multi-Agent Network Visual -->
+  <g opacity="0.95">
+    <path d="M600 260C500 280 440 380 470 480C500 580 600 580 600 580C600 580 700 580 730 480C760 380 700 280 600 260Z" fill="rgba(16, 185, 129, 0.2)" stroke="#10B981" stroke-width="8"/>
+    <path d="M600 300V550" stroke="#34D399" stroke-width="6" stroke-linecap="round"/>
+    <path d="M600 400C630 380 660 380 680 390" stroke="#34D399" stroke-width="6" stroke-linecap="round"/>
+    <path d="M600 450C570 430 540 430 520 440" stroke="#34D399" stroke-width="6" stroke-linecap="round"/>
+    
+    <circle cx="340" cy="410" r="45" fill="rgba(30, 41, 59, 0.9)" stroke="#10B981" stroke-width="4"/>
+    <circle cx="860" cy="410" r="45" fill="rgba(30, 41, 59, 0.9)" stroke="#10B981" stroke-width="4"/>
+    <path d="M385 410H470" stroke="#6EE7B7" stroke-width="4" stroke-dasharray="6 6"/>
+    <path d="M815 410H730" stroke="#6EE7B7" stroke-width="4" stroke-dasharray="6 6"/>
+  </g>
+
+  <text x="200" y="120" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="700">Mission Sustainability</text>
+  <text x="200" y="700" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="32">Multi-Agent Environmental Intelligence & Policy Analysis</text>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#061A14"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+</svg>
